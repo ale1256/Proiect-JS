@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(114, 110, 110);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(184, 176, 176);
+    font-family: serif;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.ranking {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(184, 176, 176);
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.review-container {
+    width: 48%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(184, 176, 176);
+}
+
+.review-container h3, .review-container p, .ranking h2, .ranking ol {
+    margin: 10px 0;
+}
+
+.social-icons, .home-icon {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:rgb(184, 176, 176) ;
+   
+}
+
+.home-icon {
+    bottom: 7px;
+}
+
+@media (max-width: 768px) {
+    .review-container {
+        width: 100%;
+    }
+}
+
+h2 {
+    font-family: serif;
+    text-align: center;
+}
+.comment {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: rgb(131, 127, 127);
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin: 5px 0;
+}
+
+form input[type="text"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgb(131, 127, 127);
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(114, 110, 110);
+}
+@media (max-width: 768px) {
+    .reviews-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    
+    .ranking, .review-container {
+        max-width: 100%; /* Ensure elements take full width on smaller screens */
+        margin-bottom: 10px; /* Add some space between elements */
+    }
+    
+    .reviews {
+        flex-direction: column; /* Stack reviews vertically on smaller screens */
+    }
+    
+    .review-container {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+
+
+
+
+
+
+

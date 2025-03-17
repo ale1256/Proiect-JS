@@ -1,0 +1,95 @@
+body{
+    background-image: url('login5.jpg');
+    background-size: cover;
+}
+.form_box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: rgb(201, 198, 198);
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgb(153, 152, 149);
+    border-radius: 30px;
+}
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, grey, white);
+    border-radius: 30px;
+    transition: .5s;
+}
+.inputs {
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input_field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid grey;
+    outline: none;
+    background: transparent;
+}
+.submit_btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, grey, white);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check_box {
+    margin: 30px 10px 30px 0;
+}
+span {
+    color: rgb(41, 40, 40);
+    font-size: 12px;
+}
+#login {
+    left: 50px;
+}
+#register {
+    left: 450px;
+}
+.message {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.message.success {
+    color:  rgb(62, 87, 62);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.message.error {
+    
+    color:  rgb(179, 107, 107);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

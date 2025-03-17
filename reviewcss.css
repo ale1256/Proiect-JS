@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(114, 110, 110);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(184, 176, 176);
+}
+
+#map {
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.forms {
+    margin: 0 auto;
+    width: 50%;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: rgb(214, 204, 204);
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(184, 176, 176);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(114, 110, 110);
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(184, 176, 176);;
+}
+
+.home-icon {
+    position: fixed;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(184, 176, 176);;
+}
+i{
+    color: rgb(207, 198, 198);
+}

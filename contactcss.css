@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(114, 110, 110);
+}
+
+.boxes {
+    background-color: rgb(184, 176, 176);
+    position: relative;
+    top: 50%;
+    left: 27%;
+
+   
+    padding: 10px;
+    width: 600px;
+    height: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(114, 110, 110);
+}
+
+input[type=text],select, textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(184, 176, 176);
+    color: rgb(114, 110, 110);
+    display: block;
+    margin: 0 auto;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(114, 110, 110);
+}
+.write {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.write a {
+    color: white;
+    text-decoration: none;
+}
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.message {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(114, 110, 110); 
+}

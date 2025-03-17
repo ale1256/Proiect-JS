@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('backround1.jpg');
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 5px;
+}
+
+.logo {
+  margin-right: 10px;
+  float: right;
+  line-height: 50px; 
+}
+
+.logo img {
+  height: 50px;
+  width: auto; 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(131, 125, 125);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  color: white;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color:white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.hover-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.col img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.col:hover img {
+  transform: scale(1.1);
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.rest_section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.rest_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.restaurant {
+  width: 200px;
+}
+
+.restaurant img {
+  width: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.restaurant img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  height: 100px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.welcome-message {
+  transition: opacity 0.5s;
+}
+
+.hover-container:hover .welcome-message {
+  opacity: 0;
+}
+
+#interchangeButton {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#interchangeButton:hover {
+  background-color: #6d6969;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+      float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+  }
+  .topnav input[type=text] {
+      border: 1px solid #ccc;
+  }
+  .col {
+      width: 100%;
+  }
+  .restaurant {
+      width: 100%;
+  }
+}
